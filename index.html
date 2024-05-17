@@ -1,0 +1,205 @@
+<html>
+    <head>
+       
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="practice Quiz.CSS" type="text/css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    
+                </div>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Menu</a>
+                </div>
+
+                <div class="logout">
+                    <a href="#">LogOut</a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="box-left">  
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box-rigt">
+
+            </div>
+        </div>
+
+        <div class="menuu">
+            
+            <div class="menu-container">
+                <a href="#" class="heads">MENU</a>
+                
+                <div class="item-box">
+                    <a href="#" class="heads">Details below-  -------|------ V</a>
+                    <div class="item">
+                        <img src="image/y1.png" class="image" itemname="Y1" itemprice ="95">
+                        
+                   
+
+                    </div>
+                    
+                    <div class="item">
+                        <img src="image/y2.png" class="image" itemname="Y2" itemprice ="139">
+                       
+                   
+
+                    </div>
+
+                    <div class="item">
+                        <img src="image/y3.png" class="image" itemname="Y3" itemprice ="129">
+                        <h3></h3>
+                        <p></p>
+                   
+
+                    </div>
+
+                    <div class="item">
+                        <img src="image/y4.png" class="image" itemname="Y4" itemprice ="129">
+                        <h3></h3>
+                        <p></p>
+                   
+
+                    </div>
+
+                    <div class="item">
+                        <img src="image/y5.png" class="image" itemname="Y5" itemprice ="129">
+                        <h3></h3>
+                        <p></p>
+                   
+
+                    </div>
+
+                    <div class="item">
+                        <img src="image/y6.png" class="image" itemname="Y6" itemprice ="129">
+                        <h3></h3>
+                        <p></p>
+                   
+
+                    </div>
+
+                    <div class="item">
+                        <img src="image/y7.png" class="image" itemname="Y7" itemprice ="235">
+                        <h3></h3>
+                        <p></p>
+                   
+
+                    </div>
+
+                    <div class="item">
+                        <img src="image/y8.png" class="image" itemname="Y8" itemprice ="229">
+                        <h3></h3>
+                        <p></p>
+                   
+
+                    </div>
+
+                    <div class="item">
+                        <img src="image/y9.png" class="image" itemname="Y9" itemprice ="175">
+                        <h3></h3>
+                        <p></p>
+                   
+
+                    </div>
+
+                    <div class="item">
+                        <img src="image/y10.png" class="image" itemname="Y10" itemprice ="125">
+                        <h3></h3>
+                        <p></p>
+                   
+
+                    </div>
+
+                    <div class="item">
+                        <img src="image/y11.png" class="image" itemname="Y11" itemprice ="135">
+                        <h3></h3>
+                        <p></p>
+                   
+
+                    </div>
+                    
+                    <div class="item">
+                        <img src="image/y12.png" id="imageclick" class="image" itemname="Y13" itemprice ="129">
+                        <!-- <div class="y12info" style="display: '';">
+                                <img src="image/y12.png">
+                            <h3>HAHAHAH</h3>
+                            <p>150</p> -->
+                        
+                        </div>
+                       
+                        
+
+                    </div>
+                   
+                     </div>
+                </div>
+
+                <div id="show">
+
+                    <img src="" alt="" id="showimage">
+                    <h1 id="showtitle">
+                        
+                    </h1>
+                    <p id="showprice"></p>
+    
+                    <input type="button" value="Close" id="clsbtn">
+    
+                </div>
+            </div>
+           
+            
+
+            <script>
+               const images= document.querySelectorAll('.image');
+               const show = document.getElementById('show');
+                const closed = document.getElementById('clsbtn');
+                const showimg = document.getElementById('showimage');
+                const showttle = document.getElementById('showtitle');
+                const showprc = document.getElementById('showprice');
+
+                images.forEach (image => {
+                        image.addEventListener('click', () => {
+
+                            showimg.src = image.src;
+                            showprc.textContent = image.getAttribute('itemprice');
+                            showttle.textContent = image.getAttribute('itemname');
+                            show.style.display = 'block';
+                        });
+
+                });
+
+                closed.addEventListener('click', () => {
+                  
+                    showimg.src = '';
+                            showprc.textContent = '';
+                            showttle.textContent = '';
+                            show.style.display = 'none';
+                });
+
+                window.addEventListener('click',(event) => {
+                    if(event.target == shpw){
+                        showimg.src = '';
+                            showprc.textContent = '';
+                            showttle.textContent = '';
+                            show.style.display = 'none';
+                            show.style.alignContent ='center';  
+                    }
+                });
+            </script>
+    </body>
+</html>

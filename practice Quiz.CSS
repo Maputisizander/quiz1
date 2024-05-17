@@ -1,0 +1,196 @@
+body{
+    font-family: 'Stencil', sans-serif;
+    margin: 0;
+    text-decoration: none;
+}
+header{
+    background: black;
+    height: 90px;
+    width: 100%;
+    color: black;
+    position: sticky;
+    
+}
+nav{
+    background-color: black;
+    max-width: 1200px;
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+.logout {
+    
+    border: rgb(252, 248, 10) ;
+    border-style: 0 solid;
+    padding: 5px;
+    border-radius: 15px;
+    
+    background: rgb(0, 0, 0);
+    
+    cursor: pointer
+    
+
+
+}
+.logout a{
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.logout:hover{
+    border: 3px solid yellow;
+}
+.container {
+    position: relative;
+    z-index: 1;
+
+    height: 100vh;
+    width: 100%;
+    background: url(image/homeBg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    /* position: absolute;
+    height: 550px;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    
+    background: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    transform: translate(-50%, -50%); */
+
+    /* position: absolute;
+    width: 75%;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8) url(loginBGBG.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white; */
+}
+
+.box-left {
+    margin: auto;
+    /* transform: translate(-50%, -50%); */
+    height: 500px;
+    width: 500px;
+    /* background: orange; */
+    /* position:absolute;
+    background: red;
+    width: 58%;
+    height: 100%; */
+}
+
+.menu {
+    /* position: absolute;
+    z-index: 2; */
+    height: 390px;
+    font-family: 'Impact';
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+
+}
+
+
+.menu-container{
+    /* position: relative; */
+text-align: center;
+background: linear-gradient(360deg,#f7ec98, #f7eea8 10%, #fbf5c5,#f7ec98);
+padding: 10px 9%;
+padding-bottom: 50px;
+
+}
+.menu-container .heads{
+/* position: relative; */
+text-decoration: none;
+letter-spacing: 5px;
+text-align: center;
+padding-bottom: 0;
+color: #000000;
+text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+font-size:  60px;
+}
+.menu-container a {
+    font-size: 300px;
+}
+
+.menu-container .item-box{
+    /* position: relative; */
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+gap: 30px;
+}
+
+.menu-container .item-box .item{
+    /* position:relative; */
+background: white;
+/* background: linear-gradient(360deg,#f66ee7, #bc49af 10%, #4c4ac1);
+
+ -webkit-background-clip: background; */
+align-items: center;
+justify-content: center;
+text-align: center;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+/* margin-left: 10px; */
+border-radius: 5px;
+
+padding: 0;
+transition: 1s ease;
+
+}
+
+
+.menu .menu-container .item-box .item img{
+    /* position: relative; */
+text-align: center;
+justify-content: center;
+margin-left: 0;
+
+
+
+height: 300px;
+}
+.menu .menu-container .item-box .item img .pall{
+    /* position: relative; */
+
+margin-left: 60px;
+
+opacity: 0;
+
+height: 60px;
+}
+
+#show{
+    position: absolute;
+    z-index: 999;
+    
+    height: 300px;
+    width: 300px;
+    
+    margin: auto;
+    
+}
